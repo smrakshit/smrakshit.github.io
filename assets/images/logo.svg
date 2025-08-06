@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="modernGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="modernShadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    
+    <filter id="textShadow">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Main background -->
+  <circle cx="200" cy="200" r="180" fill="url(#modernGradient)" filter="url(#modernShadow)"/>
+  
+  <!-- Abstract wireless signal representation -->
+  <g opacity="0.2">
+    <!-- Concentric signal rings -->
+    <circle cx="200" cy="200" r="140" stroke="white" stroke-width="2" fill="none" opacity="0.3"/>
+    <circle cx="200" cy="200" r="110" stroke="white" stroke-width="2" fill="none" opacity="0.5"/>
+    <circle cx="200" cy="200" r="80" stroke="white" stroke-width="2" fill="none" opacity="0.7"/>
+  </g>
+  
+  <!-- Modern geometric pattern -->
+  <g opacity="0.15">
+    <!-- Hexagonal pattern (representing network/connectivity) -->
+    <polygon points="200,130 230,145 230,175 200,190 170,175 170,145" 
+             stroke="white" stroke-width="1.5" fill="none"/>
+    <polygon points="200,210 230,225 230,255 200,270 170,255 170,225" 
+             stroke="white" stroke-width="1.5" fill="none"/>
+    <polygon points="160,170 190,185 190,215 160,230 130,215 130,185" 
+             stroke="white" stroke-width="1.5" fill="none"/>
+    <polygon points="240,170 270,185 270,215 240,230 210,215 210,185" 
+             stroke="white" stroke-width="1.5" fill="none"/>
+  </g>
+  
+  <!-- Central focus area -->
+  <circle cx="200" cy="200" r="70" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  
+  <!-- Main initials -->
+  <text x="200" y="225" text-anchor="middle" 
+        font-family="'Arial Black', Arial, sans-serif" 
+        font-size="72" 
+        font-weight="900" 
+        fill="url(#textGradient)"
+        filter="url(#textShadow)">SMR</text>
+  
+  <!-- Subtitle text -->
+  <text x="200" y="280" text-anchor="middle" 
+        font-family="'Segoe UI', Arial, sans-serif" 
+        font-size="14" 
+        font-weight="500" 
+        fill="rgba(255,255,255,0.8)"
+        letter-spacing="2px">RESEARCH • INNOVATION</text>
+  
+  <!-- Signal indicator dots -->
+  <g opacity="0.6">
+    <circle cx="140" cy="140" r="3" fill="white">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="260" cy="140" r="3" fill="white">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+    <circle cx="140" cy="260" r="3" fill="white">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+    <circle cx="260" cy="260" r="3" fill="white">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite" begin="1.5s"/>
+    </circle>
+  </g>
+  
+  <!-- Corner accent elements -->
+  <g opacity="0.4">
+    <!-- Top left -->
+    <path d="M 80 80 L 90 80 L 90 90" stroke="white" stroke-width="2" fill="none"/>
+    <!-- Top right -->
+    <path d="M 320 80 L 310 80 L 310 90" stroke="white" stroke-width="2" fill="none"/>
+    <!-- Bottom left -->
+    <path d="M 80 320 L 90 320 L 90 310" stroke="white" stroke-width="2" fill="none"/>
+    <!-- Bottom right -->
+    <path d="M 320 320 L 310 320 L 310 310" stroke="white" stroke-width="2" fill="none"/>
+  </g>
+</svg>
